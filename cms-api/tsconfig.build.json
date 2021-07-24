@@ -1,0 +1,14 @@
+{
+  "extends": "../tsconfig.build.json",
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "rootDir": "./src",
+    "outDir": "./dist"
+  },
+  "references": [
+    {
+      "path": "../core"
+    }
+  ],
+  "files": ["./src/index.ts"]
+}

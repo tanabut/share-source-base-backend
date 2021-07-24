@@ -1,0 +1,45 @@
+{
+  "name": "@share-source-base/core",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "test": "NODE_ENV=test jest --runInBand -c jest.config.js",
+    "typeorm": "ts-node -r tsconfig-paths/register ../node_modules/.bin/typeorm --config src/db.ts",
+    "db:create": "ts-node ./src/__scripts/createDb.ts",
+    "db:drop": "ts-node ./src/__scripts/dropDb.ts",
+    "db:mock": "ts-node ./src/__scripts/mockDb.ts",
+    "db:reset": "yarn db:drop && yarn db:create && yarn db:migration:run && yarn db:mock",
+    "db:migration:run": "node ./dist/__scripts/migrateDb.js",
+    "db:migration:generate": "yarn typeorm migration:generate",
+    "db:migration:revert": "yarn typeorm migration:revert"
+  },
+  "dependencies": {
+    "@hapi/boom": "^9.1.2",
+    "@share-source-base/logger": "workspace:*",
+    "@share-source-base/types": "workspace:*",
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.0",
+    "env-var": "^7.0.0",
+    "fast-csv": "^4.3.6",
+    "koa": "^2.13.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "pg": "^8.6.0",
+    "reflect-metadata": "^0.1.13",
+    "sharp": "^0.27.2",
+    "typeorm": "^0.2.32",
+    "uuid": "^8.3.2",
+    "xlsx": "^0.16.9"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^3.0.0",
+    "@types/faker": "^5",
+    "@types/koa": "^2.13.1",
+    "@types/lodash": "^4.14.168",
+    "@types/sharp": "^0.27.1",
+    "@types/uuid": "^8.3.0",
+    "faker": "^5.5.3",
+    "jest": "^26.6.3",
+    "ts-node": "^9.1.1"
+  }
+}

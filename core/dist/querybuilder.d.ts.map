@@ -1,0 +1,1 @@
+{"version":3,"file":"querybuilder.d.ts","sourceRoot":"","sources":["../src/querybuilder.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,QAAQ,EAAE,MAAM,SAAS,CAAC;AAEnC,wBAAgB,aAAa,CAAC,EAC5B,KAAK,EACL,KAAK,EACL,UAAU,GACX,EAAE;IACD,KAAK,EAAE,MAAM,CAAC;IACd,UAAU,EAAE,MAAM,CAAC;IACnB,KAAK,EAAE,MAAM,GAAG,MAAM,CAAC;CACxB,YAOA"}

@@ -1,0 +1,7 @@
+{
+  "extends": "./tsconfig.build.json",
+  "compileOnSave": false,
+  "compilerOptions": {
+    "noEmit": true
+  }
+}

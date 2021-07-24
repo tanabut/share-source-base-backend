@@ -1,0 +1,2 @@
+static/gcloud/**/*
+!static/gcloud/.gitkeep

@@ -1,0 +1,17 @@
+{
+  "extends": "../tsconfig.build.json",
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "rootDir": "./src",
+    "outDir": "./dist"
+  },
+  "references": [
+    {
+      "path": "../core"
+    },
+    {
+      "path": "../packages/logger"
+    }
+  ],
+  "include": ["./src"]
+}
